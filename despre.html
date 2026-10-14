@@ -1,82 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Despre noi | Eternal Beauty</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family:'DM Sans',sans-serif; background:#f5f1eb; color:#1e1e1e; }
-    h1,h2,h3,.logo { font-family:'Playfair Display',serif; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre noi | Eternal Beauty</title>
+    <meta name="description" content="Descoperă Eternal Beauty, conceptul nostru de design interior și valorile care ne ghidează.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
 
-<header class="bg-[#f5f1eb] shadow-sm">
-  <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-5 px-6 py-5">
-    <a href="index.html" class="logo text-2xl font-semibold text-[#2f3d34]">
-      Eternal <span class="text-[#c8a864]">Beauty</span>
-    </a>
-    <div class="flex flex-wrap gap-4 text-sm">
-      <a href="index.html">Acasă</a>
-      <a href="despre.html">Despre noi</a>
-      <a href="servicii.html">Servicii</a>
-      <a href="proiecte.html">Proiecte</a>
-      <a href="produse.html">Produse</a>
-      <a href="proces.html">Cum lucrăm</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+<body>
+<header class="fixed top-0 z-50 w-full bg-[#f5f1eb]/95 shadow-sm backdrop-blur">
+    <nav class="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
+        <a href="index.html" class="logo text-2xl font-semibold text-[#2f3d34] md:text-3xl">
+            Eternal <span class="text-[#c8a864]">Beauty</span>
+            <span class="mt-1 block font-sans text-[9px] uppercase tracking-[.35em] text-[#b8a892]">Interior Design Studio</span>
+        </a>
+
+        <div id="navLinks" class="desktop-nav absolute left-0 top-full hidden w-full flex-col gap-5 border-t border-[#b8a892] bg-[#f5f1eb] p-6 md:static md:flex md:w-auto md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
+            <a data-page="index.html" href="index.html" class="nav-link text-sm hover:text-[#c8a864]">Acasă</a>
+            <a data-page="despre.html" href="despre.html" class="nav-link text-sm hover:text-[#c8a864]">Despre noi</a>
+            <a data-page="servicii.html" href="servicii.html" class="nav-link text-sm hover:text-[#c8a864]">Servicii</a>
+            <a data-page="proiecte.html" href="proiecte.html" class="nav-link text-sm hover:text-[#c8a864]">Proiecte</a>
+            <a data-page="produse.html" href="produse.html" class="nav-link text-sm hover:text-[#c8a864]">Produse</a>
+            <a data-page="proces.html" href="proces.html" class="nav-link text-sm hover:text-[#c8a864]">Proces</a>
+            <a data-page="contact.html" href="contact.html" class="nav-link bg-[#2f3d34] px-5 py-3 text-center text-sm text-[#f5f1eb] hover:bg-[#1e1e1e]">Contact</a>
+        </div>
+
+        <button id="menuBtn" class="text-3xl text-[#2f3d34] md:hidden" aria-label="Deschide meniul" aria-expanded="false" aria-controls="navLinks">☰</button>
+    </nav>
 </header>
 
-<main class="px-6 py-16 md:py-24">
-  <section class="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
-    <img
-      src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
-      alt="Amenajare interioară modernă"
-      class="h-[450px] w-full object-cover md:h-[560px]">
+<main class="pt-24">
+    <section class="bg-[#2f3d34] px-6 py-20 text-[#f5f1eb] md:py-28">
+        <div class="reveal mx-auto max-w-7xl">
+            <p class="mb-5 text-xs uppercase tracking-[.3em] text-[#c8a864]">Povestea noastră</p>
+            <h1 class="text-5xl leading-tight md:text-7xl">Despre <span class="italic text-[#b8a892]">Eternal Beauty.</span></h1>
+            <p class="mt-6 max-w-2xl text-base leading-8 text-[#f5f1eb]/80 md:text-lg">
+                Credem că fiecare spațiu poate deveni un loc în care estetica,
+                confortul și funcționalitatea se completează armonios.
+            </p>
+        </div>
+    </section>
 
-    <div>
-      <p class="mb-4 text-xs uppercase tracking-[.3em] text-[#c8a864]">
-        Despre Eternal Beauty
-      </p>
+    <section class="bg-[#f5f1eb] px-6 py-20 md:py-32">
+        <div class="mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
+            <div class="reveal">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
+                     alt="Amenajare interioară elegantă" loading="lazy"
+                     class="h-[400px] w-full object-cover shadow-xl md:h-[560px]">
+            </div>
 
-      <h1 class="text-4xl leading-tight text-[#2f3d34] md:text-5xl">
-        Design creat pentru <span class="italic">stilul tău.</span>
-      </h1>
+            <div class="reveal md:pl-8">
+                <p class="mb-4 text-xs uppercase tracking-[.3em] text-[#c8a864]">Despre Eternal Beauty</p>
+                <h2 class="text-4xl leading-tight text-[#2f3d34] md:text-5xl">
+                    Design creat pentru <span class="italic">stilul tău.</span>
+                </h2>
 
-      <p class="mt-7 leading-8 text-black/75">
-        Eternal Beauty este o Firmă de Exercițiu orientată spre
-        design interior, decorațiuni și soluții moderne de amenajare.
-      </p>
+                <p class="mt-7 leading-8 text-[#1e1e1e]/75">
+                    Eternal Beauty este o Firmă de Exercițiu orientată spre design
+                    interior, decorațiuni și soluții moderne de amenajare a spațiilor.
+                </p>
 
-      <p class="mt-4 leading-8 text-black/75">
-        Ne propunem să dezvoltăm concepte estetice și funcționale
-        pentru locuințe, oficii și spații comerciale, punând accent
-        pe armonia culorilor, alegerea mobilierului și utilizarea
-        eficientă a fiecărui spațiu.
-      </p>
+                <p class="mt-4 leading-8 text-[#1e1e1e]/75">
+                    Ne propunem să dezvoltăm concepte estetice și funcționale pentru
+                    locuințe, oficii și spații comerciale, punând accent pe armonia
+                    culorilor, alegerea mobilierului și utilizarea eficientă a fiecărui spațiu.
+                </p>
 
-      <ul class="mt-8 space-y-4">
-        <li>✦ Proiecte personalizate de design interior</li>
-        <li>✦ Recomandări de mobilier și materiale</li>
-        <li>✦ Consultanță privind stilurile decorative</li>
-      </ul>
+                <div class="mt-8 space-y-4">
+                    <div class="flex items-start gap-3">
+                        <span class="text-xl text-[#c8a864]">✦</span>
+                        <p class="text-sm leading-6">Proiecte personalizate de design interior</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-xl text-[#c8a864]">✦</span>
+                        <p class="text-sm leading-6">Recomandări de mobilier și materiale</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-xl text-[#c8a864]">✦</span>
+                        <p class="text-sm leading-6">Consultanță privind stilurile decorative</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <a href="servicii.html"
-         class="mt-8 inline-block bg-[#2f3d34] px-6 py-4 text-white">
-        Descoperă serviciile →
-      </a>
-    </div>
-  </section>
-</main>
+    <section class="bg-white px-6 py-20 md:py-28">
+        <div class="mx-auto max-w-7xl">
+            <div class="reveal mb-14 text-center">
+                <p class="mb-4 text-xs uppercase tracking-[.3em] text-[#c8a864]">Principiile noastre</p>
+                <h2 class="text-4xl text-[#2f3d34] md:text-5xl">Ce ne definește</h2>
+            </div>
 
-<footer class="bg-[#1e1e1e] p-8 text-center text-white">
-  <p class="logo text-2xl">Eternal <span class="text-[#c8a864]">Beauty</span></p>
-  <p class="mt-3 text-sm text-[#b8a892]">© Eternal Beauty</p>
-</footer>
+            <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+                <article class="service-card reveal border border-[#b8a892]/60 bg-[#f5f1eb] p-8">
+                    <span class="text-4xl text-[#c8a864]">✧</span>
+                    <h3 class="mt-5 text-2xl text-[#2f3d34]">Creativitate</h3>
+                    <p class="mt-4 text-sm leading-7 text-[#1e1e1e]/70">
+                        Căutăm idei și combinații care oferă personalitate fiecărui interior.
+                    </p>
+                </article>
 
-</body>
-</html>
+                <article class="service-card reveal border border-[#b8a892]/60 bg-[#f5f1eb] p-8">
+                    <span class="text-4xl text-[#c8a864]">⌂</span>
+                    <h3 class="mt-5 text-2xl text-[#2f3d34]">Funcționalitate</h3>
+                    <p class="mt-4 text-sm leading-7 text-[#1e1e1e]/70">
+                        Planificăm spațiile astfel încât să fie practice și confortabile.
+                    </p>
+                </article>
+
+                <article class="service-card reveal border border-[#b8a892]/60 bg-[#f5f1eb] p-8">
+                    <span class="text-4xl text-[#c8a864]">◇</span>
+                    <h3 class="mt-5 text-2xl text-[#2f3d34]">Eleganță</h3>
+                    <p class="mt-4 text-sm leading-7 text-[#1e1e1e]/70">
+                        Urmărim echilibrul dintre culori, materiale, lumină și mobilier.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#2f3d34] px-6 py-20 text-center text-[#f5f1eb]">
+        <div class="reveal mx-auto max-w-3xl">
+            <h2 class="text-4xl md:text-5xl">Construim spații cu personalitate.</h2>
+            <p class="mt-5 leading-8 text-[#f5f1eb]/80">
+                Descoperă serviciile noastre și găsește soluția potrivită

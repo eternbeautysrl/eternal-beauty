@@ -1,135 +1,367 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acasă | Eternal Beauty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <title>Eternal Beauty | Design Interior & Decorațiuni</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+          content="Eternal Beauty oferă servicii de design interior, proiectare și amenajare pentru locuințe, oficii și spații comerciale.">
 
-  <style>
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: #f5f1eb;
-      color: #1e1e1e;
-    }
+    <meta name="keywords"
+          content="design interior, decorațiuni interioare, amenajări interioare, mobilier modern">
 
-    h1, h2, h3, .logo {
-      font-family: 'Playfair Display', serif;
-    }
+    <meta name="author" content="Eternal Beauty">
 
-    .hero {
-      background:
-        linear-gradient(90deg,
-          rgba(30,30,30,.80),
-          rgba(47,61,52,.65),
-          rgba(47,61,52,.20)),
-        url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85')
-        center/cover no-repeat;
-    }
-  </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header class="fixed top-0 z-50 w-full bg-[#f5f1eb]/95 shadow-sm backdrop-blur">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
+    <!-- NAVIGARE -->
+    <header class="fixed top-0 z-50 w-full bg-[#f5f1eb]/95 shadow-sm backdrop-blur">
+        <nav class="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
 
-    <a href="index.html" class="logo text-2xl font-semibold text-[#2f3d34]">
-      Eternal <span class="text-[#c8a864]">Beauty</span>
-      <span class="mt-1 block font-sans text-[9px] uppercase tracking-[.35em] text-[#b8a892]">
-        Interior Design Studio
-      </span>
-    </a>
+            <a href="index.html" class="logo text-2xl font-semibold text-[#2f3d34] md:text-3xl">
+                Eternal <span class="text-[#c8a864]">Beauty</span>
+                <span class="mt-1 block font-sans text-[9px] uppercase tracking-[.35em] text-[#b8a892]">
+                    Interior Design Studio
+                </span>
+            </a>
 
-    <div class="flex flex-wrap items-center gap-4 text-sm md:gap-6">
-      <a href="index.html">Acasă</a>
-      <a href="despre.html">Despre noi</a>
-      <a href="servicii.html">Servicii</a>
-      <a href="proiecte.html">Proiecte</a>
-      <a href="produse.html">Produse</a>
-      <a href="proces.html">Cum lucrăm</a>
-      <a href="contact.html" class="bg-[#2f3d34] px-4 py-3 text-white">
-        Contact
-      </a>
-    </div>
+            <div id="navLinks"
+                 class="desktop-nav absolute left-0 top-full hidden w-full flex-col gap-5 border-t border-[#b8a892] bg-[#f5f1eb] p-6 md:static md:flex md:w-auto md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
 
-  </nav>
-</header>
+                <a data-page="index.html" href="index.html"
+                   class="nav-link text-sm hover:text-[#c8a864]">Acasă</a>
 
-<main>
-  <section class="hero flex min-h-screen items-center pt-28 text-[#f5f1eb]">
-    <div class="mx-auto w-full max-w-7xl px-6 py-20 md:px-12">
+                <a data-page="despre.html" href="despre.html"
+                   class="nav-link text-sm hover:text-[#c8a864]">Despre noi</a>
 
-      <p class="mb-6 text-xs uppercase tracking-[.35em] text-[#c8a864]">
-        Artă · Design · Armonie
-      </p>
+                <a data-page="servicii.html" href="servicii.html"
+                   class="nav-link text-sm hover:text-[#c8a864]">Servicii</a>
 
-      <h1 class="max-w-3xl text-5xl leading-tight md:text-7xl">
-        Spații care
-        <span class="block italic text-[#b8a892]">
-          spun povești.
-        </span>
-      </h1>
+                <a data-page="proiecte.html" href="proiecte.html"
+                   class="nav-link text-sm hover:text-[#c8a864]">Proiecte</a>
 
-      <p class="mt-7 max-w-xl text-base leading-8 md:text-lg">
-        Transformăm ideile în spații armonioase.
-        Descoperă soluții de design interior, mobilier
-        modern și decorațiuni atent alese pentru stilul tău.
-      </p>
+                <a data-page="produse.html" href="produse.html"
+                   class="nav-link text-sm hover:text-[#c8a864]">Produse</a>
 
-      <div class="mt-9 flex flex-wrap gap-4">
-        <a href="servicii.html"
-           class="bg-[#c8a864] px-7 py-4 font-semibold text-[#1e1e1e]">
-          Descoperă serviciile
-        </a>
+                <a data-page="proces.html" href="proces.html"
+                   class="nav-link text-sm hover:text-[#c8a864]">Proces</a>
 
-        <a href="proiecte.html"
-           class="border border-white px-7 py-4">
-          Vezi proiectele
-        </a>
-      </div>
+                <a data-page="contact.html" href="contact.html"
+                   class="nav-link bg-[#2f3d34] px-5 py-3 text-center text-sm text-[#f5f1eb] transition hover:bg-[#1e1e1e]">
+                    Contact
+                </a>
+            </div>
 
-      <div class="mt-16 grid max-w-lg grid-cols-3 gap-5 border-t border-white/30 pt-7">
-        <div>
-          <p class="text-2xl text-[#c8a864]">01</p>
-          <p class="mt-2 text-xs uppercase">Creativitate</p>
+            <button id="menuBtn"
+                    class="text-3xl text-[#2f3d34] md:hidden"
+                    aria-label="Deschide meniul"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PAGINA PRINCIPALĂ -->
+        <section class="hero flex min-h-[720px] items-center pt-28 text-[#f5f1eb] md:min-h-[830px]">
+
+            <div class="mx-auto w-full max-w-7xl px-6 py-20 md:px-12">
+                <div class="reveal max-w-3xl">
+
+                    <p class="mb-6 text-xs uppercase tracking-[.35em] text-[#c8a864] md:text-sm">
+                        Artă · Design · Armonie
+                    </p>
+
+                    <h1 class="text-5xl leading-tight md:text-7xl lg:text-8xl">
+                        Spații care
+                        <span class="block italic text-[#b8a892]">
+                            spun povești.
+                        </span>
+                    </h1>
+
+                    <p class="mt-7 max-w-xl text-base leading-8 text-[#f5f1eb]/90 md:text-lg">
+                        Transformăm ideile în spații armonioase.
+                        Descoperă soluții de design interior, mobilier
+                        modern și decorațiuni atent alese pentru stilul tău.
+                    </p>
+
+                    <div class="mobile-actions mt-9 flex flex-wrap gap-4">
+                        <a href="servicii.html"
+                           class="bg-[#c8a864] px-7 py-4 text-sm font-semibold text-[#1e1e1e] transition hover:bg-[#b8a892]">
+                            Descoperă serviciile
+                        </a>
+
+                        <a href="proiecte.html"
+                           class="border border-[#f5f1eb]/70 px-7 py-4 text-sm transition hover:bg-[#f5f1eb] hover:text-[#2f3d34]">
+                            Vezi proiectele
+                        </a>
+                    </div>
+
+                    <div class="mt-16 grid max-w-lg grid-cols-3 gap-5 border-t border-[#f5f1eb]/30 pt-7">
+                        <div>
+                            <p class="text-2xl text-[#c8a864]">01</p>
+                            <p class="mt-2 text-xs uppercase tracking-wider">Creativitate</p>
+                        </div>
+
+                        <div>
+                            <p class="text-2xl text-[#c8a864]">02</p>
+                            <p class="mt-2 text-xs uppercase tracking-wider">Funcționalitate</p>
+                        </div>
+
+                        <div>
+                            <p class="text-2xl text-[#c8a864]">03</p>
+                            <p class="mt-2 text-xs uppercase tracking-wider">Eleganță</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREZENTARE SCURTĂ -->
+        <section class="bg-[#f5f1eb] px-6 py-20 md:py-28">
+            <div class="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
+
+                <div class="reveal">
+                    <p class="mb-4 text-xs uppercase tracking-[.3em] text-[#c8a864]">
+                        Despre Eternal Beauty
+                    </p>
+
+                    <h2 class="text-4xl leading-tight text-[#2f3d34] md:text-5xl">
+                        Design creat pentru
+                        <span class="italic">stilul tău.</span>
+                    </h2>
+
+                    <p class="mt-6 leading-8 text-[#1e1e1e]/75">
+                        Suntem o Firmă de Exercițiu orientată spre design
+                        interior, decorațiuni și soluții moderne de amenajare.
+                        Punem accent pe echilibrul dintre estetică și funcționalitate.
+                    </p>
+
+                    <a href="despre.html"
+                       class="mt-7 inline-block bg-[#2f3d34] px-6 py-4 text-sm text-[#f5f1eb] transition hover:bg-[#1e1e1e]">
+                        Află mai multe →
+                    </a>
+                </div>
+
+                <div class="reveal">
+                    <img
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
+                        alt="Amenajare interioară modernă"
+                        loading="lazy"
+                        class="h-[350px] w-full object-cover shadow-xl md:h-[500px]">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICII RECOMANDATE -->
+        <section class="bg-white px-6 py-20 md:py-28">
+            <div class="mx-auto max-w-7xl">
+
+                <div class="reveal mb-12 text-center">
+                    <p class="mb-4 text-xs uppercase tracking-[.3em] text-[#c8a864]">
+                        Ce oferim
+                    </p>
+
+                    <h2 class="text-4xl text-[#2f3d34] md:text-5xl">
+                        Idei transformate în spații
+                    </h2>
+
+                    <p class="mx-auto mt-5 max-w-2xl leading-7 text-[#1e1e1e]/65">
+                        Descoperă servicii adaptate stilului, nevoilor
+                        și funcționalității spațiului tău.
+                    </p>
+                </div>
+
+                <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <article class="service-card reveal border border-[#b8a892]/60 bg-[#f5f1eb]">
+                        <img
+                            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85"
+                            alt="Proiectare interioară"
+                            loading="lazy"
+                            class="h-60 w-full object-cover">
+
+                        <div class="p-7">
+                            <p class="text-xs uppercase tracking-[.2em] text-[#c8a864]">
+                                01 / Design
+                            </p>
+                            <h3 class="mt-3 text-2xl text-[#2f3d34]">
+                                Proiectare interioară
+                            </h3>
+                            <p class="mt-3 text-sm leading-7 text-[#1e1e1e]/70">
+                                Concepte de design pentru locuințe, oficii
+                                și spații comerciale.
+                            </p>
+                            <a href="servicii.html"
+                               class="mt-5 inline-block text-sm font-semibold text-[#2f3d34] hover:text-[#c8a864]">
+                                Vezi serviciile →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal border border-[#b8a892]/60 bg-[#f5f1eb]">
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=85"
+                            alt="Amenajarea spațiilor"
+                            loading="lazy"
+                            class="h-60 w-full object-cover">
+
+                        <div class="p-7">
+                            <p class="text-xs uppercase tracking-[.2em] text-[#c8a864]">
+                                02 / Amenajare
+                            </p>
+                            <h3 class="mt-3 text-2xl text-[#2f3d34]">
+                                Amenajarea spațiilor
+                            </h3>
+                            <p class="mt-3 text-sm leading-7 text-[#1e1e1e]/70">
+                                Propuneri pentru organizarea eficientă
+                                și estetică a interiorului.
+                            </p>
+                            <a href="servicii.html"
+                               class="mt-5 inline-block text-sm font-semibold text-[#2f3d34] hover:text-[#c8a864]">
+                                Vezi serviciile →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal border border-[#b8a892]/60 bg-[#f5f1eb]">
+                        <img
+                            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=85"
+                            alt="Decorațiuni interioare"
+                            loading="lazy"
+                            class="h-60 w-full object-cover">
+
+                        <div class="p-7">
+                            <p class="text-xs uppercase tracking-[.2em] text-[#c8a864]">
+                                03 / Decorațiuni
+                            </p>
+                            <h3 class="mt-3 text-2xl text-[#2f3d34]">
+                                Consultanță decorativă
+                            </h3>
+                            <p class="mt-3 text-sm leading-7 text-[#1e1e1e]/70">
+                                Recomandări de culori, texturi și elemente
+                                decorative pentru interior.
+                            </p>
+                            <a href="servicii.html"
+                               class="mt-5 inline-block text-sm font-semibold text-[#2f3d34] hover:text-[#c8a864]">
+                                Vezi serviciile →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="mt-10 text-center">
+                    <a href="servicii.html"
+                       class="inline-block bg-[#2f3d34] px-7 py-4 text-sm text-[#f5f1eb] transition hover:bg-[#1e1e1e]">
+                        Toate serviciile →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROIECTE RECOMANDATE -->
+        <section class="bg-[#f5f1eb] px-6 py-20 md:py-28">
+            <div class="mx-auto max-w-7xl">
+
+                <div class="reveal mb-12 text-center">
+                    <p class="mb-4 text-xs uppercase tracking-[.3em] text-[#c8a864]">
+                        Idei și inspirație
+                    </p>
+                    <h2 class="text-4xl text-[#2f3d34] md:text-5xl">
+                        Proiecte care inspiră
+                    </h2>
+                </div>
+
+                <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    <a href="proiecte.html" class="gallery-item reveal">
+                        <img
+                            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
+                            alt="Living elegant"
+                            loading="lazy"
+                            class="h-72 w-full object-cover">
+                    </a>
+
+                    <a href="proiecte.html" class="gallery-item reveal">
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+                            alt="Interior modern"
+                            loading="lazy"
+                            class="h-72 w-full object-cover">
+                    </a>
+
+                    <a href="proiecte.html" class="gallery-item reveal">
+                        <img
+                            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"
+                            alt="Amenajare contemporană"
+                            loading="lazy"
+                            class="h-72 w-full object-cover">
+                    </a>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <a href="proiecte.html"
+                       class="inline-block border border-[#2f3d34] px-7 py-4 text-sm text-[#2f3d34] transition hover:bg-[#2f3d34] hover:text-white">
+                        Vezi toate proiectele →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT RAPID -->
+        <section class="bg-[#2f3d34] px-6 py-20 text-center text-[#f5f1eb] md:py-24">
+            <div class="reveal mx-auto max-w-3xl">
+                <p class="mb-4 text-xs uppercase tracking-[.3em] text-[#c8a864]">
+                    Ai o idee?
+                </p>
+
+                <h2 class="text-4xl md:text-5xl">
+                    Hai să o transformăm în realitate.
+                </h2>
+
+                <p class="mx-auto mt-6 max-w-xl leading-8 text-[#f5f1eb]/80">
+                    Contactează-ne pentru informații despre servicii,
+                    amenajări și produsele noastre.
+                </p>
+
+                <a href="contact.html"
+                   class="mt-8 inline-block bg-[#c8a864] px-7 py-4 text-sm font-semibold text-[#1e1e1e] transition hover:bg-[#b8a892]">
+                    Contactează-ne →
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- SUBSOL -->
+    <footer class="bg-[#1e1e1e] px-6 py-10 text-[#f5f1eb]">
+        <div class="mx-auto flex max-w-7xl flex-col justify-between gap-6 md:flex-row md:items-center">
+
+            <a href="index.html" class="logo text-2xl font-semibold">
+                Eternal <span class="text-[#c8a864]">Beauty</span>
+            </a>
+
+            <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#f5f1eb]/75">
+                <a href="despre.html" class="hover:text-[#c8a864]">Despre noi</a>
+                <a href="servicii.html" class="hover:text-[#c8a864]">Servicii</a>
+                <a href="proiecte.html" class="hover:text-[#c8a864]">Proiecte</a>
+                <a href="produse.html" class="hover:text-[#c8a864]">Produse</a>
+                <a href="contact.html" class="hover:text-[#c8a864]">Contact</a>
+            </div>
+
+            <p class="text-sm text-[#f5f1eb]/60">
+                © <span data-year></span> Eternal Beauty
+            </p>
         </div>
-        <div>
-          <p class="text-2xl text-[#c8a864]">02</p>
-          <p class="mt-2 text-xs uppercase">Funcționalitate</p>
-        </div>
-        <div>
-          <p class="text-2xl text-[#c8a864]">03</p>
-          <p class="mt-2 text-xs uppercase">Eleganță</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-</main>
-
-<footer class="bg-[#1e1e1e] px-6 py-10 text-center text-[#f5f1eb]">
-  <p class="logo text-2xl">
-    Eternal <span class="text-[#c8a864]">Beauty</span>
-  </p>
-  <p class="mt-3 text-xs text-[#b8a892]">
-    Interior Design Studio
-  </p>
-  <p class="mt-5 text-xs text-[#b8a892]">
-    © <span id="year"></span> Eternal Beauty
-  </p>
-</footer>
-
-<script>
-  document.getElementById('year').textContent =
-    new Date().getFullYear();
-</script>
+    </footer>
 
 </body>
 </html>

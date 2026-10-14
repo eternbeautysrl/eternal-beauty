@@ -1,86 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cum lucrăm | Eternal Beauty</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family:'DM Sans',sans-serif; background:#f5f1eb; }
-    h1,h2,h3,.logo { font-family:'Playfair Display',serif; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesul de lucru | Eternal Beauty</title>
+    <meta name="description" content="Descoperă etapele unui proiect de design interior la Eternal Beauty.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
 
-<header class="bg-[#f5f1eb] shadow-sm">
-  <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-5 px-6 py-5">
-    <a href="index.html" class="logo text-2xl font-semibold text-[#2f3d34]">Eternal <span class="text-[#c8a864]">Beauty</span></a>
-    <div class="flex flex-wrap gap-4 text-sm">
-      <a href="index.html">Acasă</a><a href="despre.html">Despre noi</a>
-      <a href="servicii.html">Servicii</a><a href="proiecte.html">Proiecte</a>
-      <a href="produse.html">Produse</a><a href="proces.html">Cum lucrăm</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+<body>
+<header class="fixed top-0 z-50 w-full bg-[#f5f1eb]/95 shadow-sm backdrop-blur">
+    <nav class="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
+        <a href="index.html" class="logo text-2xl font-semibold text-[#2f3d34] md:text-3xl">
+            Eternal <span class="text-[#c8a864]">Beauty</span>
+            <span class="mt-1 block font-sans text-[9px] uppercase tracking-[.35em] text-[#b8a892]">Interior Design Studio</span>
+        </a>
+
+        <div id="navLinks" class="desktop-nav absolute left-0 top-full hidden w-full flex-col gap-5 border-t border-[#b8a892] bg-[#f5f1eb] p-6 md:static md:flex md:w-auto md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
+            <a data-page="index.html" href="index.html" class="nav-link text-sm hover:text-[#c8a864]">Acasă</a>
+            <a data-page="despre.html" href="despre.html" class="nav-link text-sm hover:text-[#c8a864]">Despre noi</a>
+            <a data-page="servicii.html" href="servicii.html" class="nav-link text-sm hover:text-[#c8a864]">Servicii</a>
+            <a data-page="proiecte.html" href="proiecte.html" class="nav-link text-sm hover:text-[#c8a864]">Proiecte</a>
+            <a data-page="produse.html" href="produse.html" class="nav-link text-sm hover:text-[#c8a864]">Produse</a>
+            <a data-page="proces.html" href="proces.html" class="nav-link text-sm hover:text-[#c8a864]">Proces</a>
+            <a data-page="contact.html" href="contact.html" class="nav-link bg-[#2f3d34] px-5 py-3 text-center text-sm text-[#f5f1eb] hover:bg-[#1e1e1e]">Contact</a>
+        </div>
+
+        <button id="menuBtn" class="text-3xl text-[#2f3d34] md:hidden" aria-label="Deschide meniul" aria-expanded="false" aria-controls="navLinks">☰</button>
+    </nav>
 </header>
 
-<main class="bg-[#2f3d34] px-6 py-20 text-[#f5f1eb] md:py-28">
-  <div class="mx-auto max-w-7xl">
+<main class="pt-24">
+    <section class="bg-[#2f3d34] px-6 py-20 text-[#f5f1eb] md:py-28">
+        <div class="reveal mx-auto max-w-7xl">
+            <p class="mb-5 text-xs uppercase tracking-[.3em] text-[#c8a864]">Cum lucrăm</p>
+            <h1 class="text-5xl leading-tight md:text-7xl">De la idee la <span class="italic text-[#b8a892]">armonie.</span></h1>
+            <p class="mt-6 max-w-2xl leading-8 text-[#f5f1eb]/80">
+                Fiecare amenajare începe cu înțelegerea nevoilor și se dezvoltă pas cu pas într-un concept coerent.
+            </p>
+        </div>
+    </section>
 
-    <div class="mx-auto mb-14 max-w-2xl text-center">
-      <p class="mb-4 text-xs uppercase tracking-[.3em] text-[#c8a864]">De la idee la concept</p>
-      <h1 class="text-4xl md:text-5xl">Cum lucrăm</h1>
-      <p class="mt-5 leading-7 text-white/75">
-        Un proces clar pentru dezvoltarea conceptelor de design
-        și amenajare interioară.
-      </p>
-    </div>
+    <section class="bg-[#f5f1eb] px-6 py-20 md:py-32">
+        <div class="mx-auto max-w-5xl">
+            <div class="reveal mb-14 text-center">
+                <p class="mb-4 text-xs uppercase tracking-[.3em] text-[#c8a864]">Etapele proiectului</p>
+                <h2 class="text-4xl text-[#2f3d34] md:text-5xl">Procesul nostru de lucru</h2>
+            </div>
 
-    <div class="grid gap-10 md:grid-cols-3">
+            <div class="space-y-6">
+                <article class="reveal grid gap-5 border border-[#b8a892]/60 bg-white p-7 sm:grid-cols-[100px_1fr] sm:p-10">
+                    <div class="text-5xl text-[#c8a864]">01</div>
+                    <div>
+                        <h3 class="text-2xl text-[#2f3d34]">Discuție și consultanță</h3>
+                        <p class="mt-3 leading-7 text-[#1e1e1e]/70">
+                            Începem prin a înțelege spațiul, preferințele, obiectivele și stilul dorit.
+                        </p>
+                    </div>
+                </article>
 
-      <article class="border-t border-[#c8a864] pt-6">
-        <p class="text-3xl text-[#c8a864]">01</p>
-        <h2 class="mt-4 text-2xl">Discutăm ideile</h2>
-        <p class="mt-3 text-sm leading-7 text-white/75">
-          Identificăm preferințele, stilul și cerințele proiectului
-          de amenajare.
-        </p>
-      </article>
+                <article class="reveal grid gap-5 border border-[#b8a892]/60 bg-white p-7 sm:grid-cols-[100px_1fr] sm:p-10">
+                    <div class="text-5xl text-[#c8a864]">02</div>
+                    <div>
+                        <h3 class="text-2xl text-[#2f3d34]">Concept și inspirație</h3>
+                        <p class="mt-3 leading-7 text-[#1e1e1e]/70">
+                            Identificăm direcția estetică, paleta de culori, materialele și elementele potrivite.
+                        </p>
+                    </div>
+                </article>
 
-      <article class="border-t border-[#c8a864] pt-6">
-        <p class="text-3xl text-[#c8a864]">02</p>
-        <h2 class="mt-4 text-2xl">Dezvoltăm conceptul</h2>
-        <p class="mt-3 text-sm leading-7 text-white/75">
-          Selectăm culorile, materialele, mobilierul și elementele
-          decorative potrivite.
-        </p>
-      </article>
+                <article class="reveal grid gap-5 border border-[#b8a892]/60 bg-white p-7 sm:grid-cols-[100px_1fr] sm:p-10">
+                    <div class="text-5xl text-[#c8a864]">03</div>
+                    <div>
+                        <h3 class="text-2xl text-[#2f3d34]">Planificare și selecție</h3>
+                        <p class="mt-3 leading-7 text-[#1e1e1e]/70">
+                            Organizăm funcțional spațiul și alegem mobilierul, finisajele și decorațiunile.
+                        </p>
+                    </div>
+                </article>
 
-      <article class="border-t border-[#c8a864] pt-6">
-        <p class="text-3xl text-[#c8a864]">03</p>
-        <h2 class="mt-4 text-2xl">Prezentăm soluția</h2>
-        <p class="mt-3 text-sm leading-7 text-white/75">
-          Pregătim o propunere de design și o prezentăm pentru
-          analiză și îmbunătățire.
-        </p>
-      </article>
+                <article class="reveal grid gap-5 border border-[#b8a892]/60 bg-white p-7 sm:grid-cols-[100px_1fr] sm:p-10">
+                    <div class="text-5xl text-[#c8a864]">04</div>
+                    <div>
+                        <h3 class="text-2xl text-[#2f3d34]">Propunerea finală</h3>
+                        <p class="mt-3 leading-7 text-[#1e1e1e]/70">
+                            Reunim ideile într-o propunere coerentă, cu accent pe armonie și utilitate.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-    </div>
-
-    <div class="mt-14 text-center">
-      <a href="contact.html" class="inline-block bg-[#c8a864] px-7 py-4 font-semibold text-[#1e1e1e]">
-        Începe un proiect →
-      </a>
-    </div>
-
-  </div>
+    <section class="bg-white px-6 py-20 text-center md:py-24">
+        <div class="reveal mx-auto max-w-3xl">
+            <h2 class="text-4xl text-[#2f3d34] md:text-5xl">Începem proiectul tău?</h2>
+            <p class="mt-5 leading-8 text-[#1e1e1e]/70">
+                Contactează-ne și discutăm despre ideile și cerințele tale.
+            </p>
+            <a href="contact.html" class="mt-8 inline-block bg-[#2f3d34] px-7 py-4 text-sm text-white hover:bg-[#1e1e1e]">
+                Solicită o consultație →
+            </a>
+        </div>
+    </section>
 </main>
 
-<footer class="bg-[#1e1e1e] p-8 text-center text-white">
-  <p class="logo text-2xl">Eternal <span class="text-[#c8a864]">Beauty</span></p>
-  <p class="mt-3 text-sm text-[#b8a892]">© Eternal Beauty</p>
+<footer class="bg-[#1e1e1e] px-6 py-10 text-[#f5f1eb]">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-6 md:flex-row md:items-center">
+        <a href="index.html" class="logo text-2xl font-semibold">Eternal <span class="text-[#c8a864]">Beauty</span></a>
+        <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#f5f1eb]/75">
+            <a href="despre.html" class="hover:text-[#c8a864]">Despre noi</a>
+            <a href="servicii.html" class="hover:text-[#c8a864]">Servicii</a>
+            <a href="proiecte.html" class="hover:text-[#c8a864]">Proiecte</a>
+            <a href="produse.html" class="hover:text-[#c8a864]">Produse</a>
+            <a href="contact.html" class="hover:text-[#c8a864]">Contact</a>
+        </div>
+        <p class="text-sm text-[#f5f1eb]/60">© <span data-year></span> Eternal Beauty</p>
+    </div>
 </footer>
 </body>
 </html>
