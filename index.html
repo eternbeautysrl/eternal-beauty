@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acasă | Eternal Beauty</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f5f1eb;
+      color: #1e1e1e;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .hero {
+      background:
+        linear-gradient(90deg,
+          rgba(30,30,30,.80),
+          rgba(47,61,52,.65),
+          rgba(47,61,52,.20)),
+        url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85')
+        center/cover no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="fixed top-0 z-50 w-full bg-[#f5f1eb]/95 shadow-sm backdrop-blur">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
+
+    <a href="index.html" class="logo text-2xl font-semibold text-[#2f3d34]">
+      Eternal <span class="text-[#c8a864]">Beauty</span>
+      <span class="mt-1 block font-sans text-[9px] uppercase tracking-[.35em] text-[#b8a892]">
+        Interior Design Studio
+      </span>
+    </a>
+
+    <div class="flex flex-wrap items-center gap-4 text-sm md:gap-6">
+      <a href="index.html">Acasă</a>
+      <a href="despre.html">Despre noi</a>
+      <a href="servicii.html">Servicii</a>
+      <a href="proiecte.html">Proiecte</a>
+      <a href="produse.html">Produse</a>
+      <a href="proces.html">Cum lucrăm</a>
+      <a href="contact.html" class="bg-[#2f3d34] px-4 py-3 text-white">
+        Contact
+      </a>
+    </div>
+
+  </nav>
+</header>
+
+<main>
+  <section class="hero flex min-h-screen items-center pt-28 text-[#f5f1eb]">
+    <div class="mx-auto w-full max-w-7xl px-6 py-20 md:px-12">
+
+      <p class="mb-6 text-xs uppercase tracking-[.35em] text-[#c8a864]">
+        Artă · Design · Armonie
+      </p>
+
+      <h1 class="max-w-3xl text-5xl leading-tight md:text-7xl">
+        Spații care
+        <span class="block italic text-[#b8a892]">
+          spun povești.
+        </span>
+      </h1>
+
+      <p class="mt-7 max-w-xl text-base leading-8 md:text-lg">
+        Transformăm ideile în spații armonioase.
+        Descoperă soluții de design interior, mobilier
+        modern și decorațiuni atent alese pentru stilul tău.
+      </p>
+
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="servicii.html"
+           class="bg-[#c8a864] px-7 py-4 font-semibold text-[#1e1e1e]">
+          Descoperă serviciile
+        </a>
+
+        <a href="proiecte.html"
+           class="border border-white px-7 py-4">
+          Vezi proiectele
+        </a>
+      </div>
+
+      <div class="mt-16 grid max-w-lg grid-cols-3 gap-5 border-t border-white/30 pt-7">
+        <div>
+          <p class="text-2xl text-[#c8a864]">01</p>
+          <p class="mt-2 text-xs uppercase">Creativitate</p>
+        </div>
+        <div>
+          <p class="text-2xl text-[#c8a864]">02</p>
+          <p class="mt-2 text-xs uppercase">Funcționalitate</p>
+        </div>
+        <div>
+          <p class="text-2xl text-[#c8a864]">03</p>
+          <p class="mt-2 text-xs uppercase">Eleganță</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="bg-[#1e1e1e] px-6 py-10 text-center text-[#f5f1eb]">
+  <p class="logo text-2xl">
+    Eternal <span class="text-[#c8a864]">Beauty</span>
+  </p>
+  <p class="mt-3 text-xs text-[#b8a892]">
+    Interior Design Studio
+  </p>
+  <p class="mt-5 text-xs text-[#b8a892]">
+    © <span id="year"></span> Eternal Beauty
+  </p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
